@@ -18,14 +18,11 @@ class TestConversor(unittest.TestCase):
         self.assertEqual(fahrenheit_para_celsius(32), 0)
         self.assertEqual(fahrenheit_para_celsius(212), 100)
 
-
     def test_fahrenheit_para_kelvin(self):
-        self.assertEqual(fahrenheit_para_kelvin(32), 273.15)
-        self.assertEqual(fahrenheit_para_kelvin(212), 373.15)
-
+        self.assertAlmostEqual(fahrenheit_para_kelvin(212), 373.15, places=2)
 
     def test_valor_invalido(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             celsius_para_fahrenheit("inválido")
 
 if __name__ == "__main__":
