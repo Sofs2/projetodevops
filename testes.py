@@ -1,6 +1,6 @@
 import unittest
 from conversor import celsius_para_fahrenheit, celsius_para_kelvin, fahrenheit_para_celsius, fahrenheit_para_kelvin
-
+print("Testando")
 class TestConversor(unittest.TestCase):
 
 
