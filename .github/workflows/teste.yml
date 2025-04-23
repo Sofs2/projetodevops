@@ -1,4 +1,4 @@
-name: Testes Unitários
+name: Testes 
 
 on:
   pull_request:
