@@ -17,5 +17,5 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: |
-            📢 Alerta do GitHub:
-            ✅ Sofia, aqui está sua notificação: Novo push ou merge na branch `main` do repositório **projetodevops**!
+            Alerta do GitHub:
+            Sofia, aqui está sua notificação: Novo push ou merge na branch `main` do repositório **projetodevops**!
