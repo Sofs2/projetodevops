@@ -1,21 +1,17 @@
-name: Alerta para o Discord
+name: Alerta Discord
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    types: [closed]
 
 jobs:
-  alerta:
+  alert:
     runs-on: ubuntu-latest
-
     steps:
       - name: Enviar alerta para o Discord
         uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: |
-            Alerta do GitHub:
-            Sofia, aqui está sua notificação: Novo push ou merge na branch `main` do repositório **projetodevops**!
+          args: '🚀 Novo push feito no repositório **${{ github.repository }}** por ${{ github.actor }}!'
