@@ -2,7 +2,7 @@ from conversor import *
 from utils import e_float
 
 print("=== Conversor de Temperatura ===")
-print("Teste de alerta no Discord funcionando!")
+print("Teste dos testes")
 print("1. Celsius para Fahrenheit e Kelvin")
 print("2. Fahrenheit para Celsius e Kelvin")
 menu = input("Escolha a opção (1 ou 2): ")
